@@ -1,0 +1,33 @@
+# Root gitignore for PGCET Portal
+.env
+.env.local
+.env.*.local
+*.env
+*.log
+
+# Python
+backend/.venv/
+backend/.pytest_cache/
+backend/__pycache__/
+*.pyc
+*.pyo
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Local Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/*/.gitkeep
+
+# Database
+*.db
+*.sqlite3
+backend/pgcet.db

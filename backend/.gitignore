@@ -1,0 +1,41 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables
+.env
+
+# SQLite fallback local db if used
+*.db
+*.sqlite3
+
+# Uploads directory contents except .gitkeep
+uploads/*
+!uploads/.gitkeep
+!uploads/*/.gitkeep
+
+# IDEs
+.idea/
+.vscode/
+*.swp
