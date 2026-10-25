@@ -16,8 +16,8 @@ class Settings(BaseModel):
     # Environment
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
 
-    # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/pgcet_portal")
+    # Database (defaults to SQLite for zero-config deployments, or PostgreSQL when DATABASE_URL is set)
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./pgcet.db")
 
     # JWT Authentication
     SECRET_KEY: str = os.getenv("SECRET_KEY", "supersecretjwtkey_replace_with_a_secure_random_string_in_production")
